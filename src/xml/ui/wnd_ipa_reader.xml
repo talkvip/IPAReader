@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frame defaultcloseoperation="JFrame.EXIT_ON_CLOSE" title="IPA Reader"
+	minimumsize="512,32">
+
+	<panel layout="GridBagLayout">
+
+		<!-- IPA FILE -->
+		<label icon="icons/package.png">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="0" gridy="0" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label text="IPA file">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="1" gridy="0" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label id="mPath">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="2" gridy="0" insets="4,4,4,4" weightx="1" weighty="0" />
+		</label>
+		<button actioncommand="ACTION_BROWSE_IPA" icon="icons/folder_explore.png">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="3" gridy="0" insets="4,4,4,4" weightx="0" weighty="0" />
+		</button>
+
+
+		<!-- DIVIDER -->
+		<separator orientation="0">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				insets="4,4,4,4" gridx="0" gridy="1" weightx="0" weighty="0"
+				gridwidth="4" />
+		</separator>
+
+
+		<!--Name -->
+		<label icon="icons/lock.png">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="0" gridy="2" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label text="Provisioning profile">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="1" gridy="2" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label id="mName">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="2" gridy="2" insets="4,4,4,4" weightx="0" weighty="0"
+				gridwidth="2" />
+		</label>
+
+
+		<!--CreationDate -->
+		<label icon="icons/calendar.png">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="0" gridy="3" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label text="Creation Date">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="1" gridy="3" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label id="mCreationDate">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="2" gridy="3" insets="4,4,4,4" weightx="0" weighty="0"
+				gridwidth="2" />
+		</label>
+
+		<!--ExpirationDate -->
+		<label icon="icons/calendar_delete.png">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="0" gridy="4" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label text="Expiration Date">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="1" gridy="4" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label id="mExpirationDate">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="2" gridy="4" insets="4,4,4,4" weightx="0" weighty="0"
+				gridwidth="2" />
+		</label>
+
+		<!--application-identifier -->
+		<label icon="icons/key.png">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="0" gridy="5" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label text="Application identifier">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="1" gridy="5" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label id="mAppId">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="2" gridy="5" insets="4,4,4,4" weightx="0" weighty="0"
+				gridwidth="2" />
+		</label>
+
+		<!-- DIVIDER -->
+		<separator orientation="0">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				insets="4,4,4,4" gridx="0" gridy="6" weightx="0" weighty="0"
+				gridwidth="4" />
+		</separator>
+
+		<!-- ProvisionedDevices -->
+		<label icon="icons/phone.png">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="0" gridy="7" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<label text="Provisioned Devices">
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridx="1" gridy="7" insets="4,4,4,4" weightx="0" weighty="0" />
+		</label>
+		<scrollpane>
+			<textarea id="mDevices" rows="3" editable="no" />
+			<gridbagconstraints fill="GridBagConstraints.BOTH"
+				gridwidth="4" gridx="0" gridy="8" insets="4,4,4,4" weightx="1"
+				weighty="1" />
+		</scrollpane>
+
+		<!--Type if (ProvisionsAllDevices) then Enterprise (App Store ?) else if 
+			(ProvisionedDevices) then AdHoc -->
+
+	</panel>
+</frame>
